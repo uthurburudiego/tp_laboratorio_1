@@ -58,6 +58,7 @@ do{
 
 
 
+
 	switch (selectorMenu)
 	 {
 		case 1:
@@ -124,6 +125,8 @@ do{
 
 					diferencia=diferenciaEntreDos(precioAerolineas,precioLatam);
 					flag =1;
+
+					printf("\n LOS CALCULOS FUERON REALIZADOS CON EXITO!! \n");
 			}
 			else
 			{
@@ -217,8 +220,9 @@ do{
 
 		case 6:
 
-			//*****SALIDA****
 			salida=0;
+
+
 			break;
 
 		default:

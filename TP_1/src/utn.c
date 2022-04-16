@@ -16,7 +16,7 @@ int pedirEntero(int numero)
 
 	scanf("%d",&numero);
 
-	if(!(numero>0 && numero< 6))
+	if(!(numero>0 && numero< 7))
 	{
 		fflush(stdin);
 		numero=7;
