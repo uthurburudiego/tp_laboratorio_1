@@ -4,9 +4,11 @@
  Author      : Diego Uthurburu
  Version     :
  Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Description : Este es un programa en C, realiza calculos para determinar los costos de viajes,
+ segun distintos parametros
  ============================================================================
  */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,6 +18,8 @@
 int main(void)
 {
 	setbuf(stdout, NULL);
+
+	// Declaramos las variables
 
  float kilometros;
  float precioAerolineas;
@@ -57,10 +61,11 @@ do{
 	   selectorMenu=pedirEntero(selectorMenu);
 
 
-
+//************ SEGUN LA OPCION ELEGIDA ENTRA EN UNA PARTE DEL MENU *********
 
 	switch (selectorMenu)
 	 {
+	// ************* SE INGRESA LA CANTIDAD DE KILOMETROS ***********
 		case 1:
 
 			printf("(1) **** Ingrese cantidad de Kilometros ****\n \n");
@@ -78,7 +83,7 @@ do{
 			 }
 
 			break;
-
+//******************** PEDIMOS LOS VALORES DE LOS VUELOS UNO POR CADA AEROLINEA ************
 		case 2:
 			 printf("(2) **** Ingresar Precio de Vuelos  ****\n \n");
 
@@ -105,6 +110,7 @@ do{
 			 }
 			break;
 
+			// **************** AQUI SE REALIZAN TODOS LOS CALCULOS *********
 		case 3:
 			if(kilometros !=0 && precioLatam!=0 && precioAerolineas!=0)
 			{
@@ -134,6 +140,8 @@ do{
 			}
 					break;
 
+
+//************** EN ESTA OPCION MOSTRAMOS TODOS LOS RESULTADOS POR CONSOLA **********
 		case 4:
 			if(flag==1)
 			{
@@ -164,7 +172,7 @@ do{
 			}
 
 			break;
-
+//******************** AQUI SE HARCODEAN LOS DATOS, SE CALCULAN Y SE MUESTRAN POR CONSOLA ******
 		case 5:
 			printf("\n\n 5) Carga forzada de datos \n\n  ");
 
@@ -217,7 +225,7 @@ do{
 					break;
 
 
-
+//********* ESTA OPCION PERMITE SALIR DEL MENU Y TERMINAR EL PROGRAMA **********
 		case 6:
 
 			salida=0;
